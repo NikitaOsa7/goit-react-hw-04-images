@@ -42,7 +42,7 @@ export default function App() {
     }, [images, page, searchData]);
 
     const onSumbit = newSearchData => {
-        if (searchData.trim() === '') {
+        if (newSearchData.trim() === '') {
             return toast.error('Enter the image request');
         } else if (newSearchData === searchData) {
             return;
