@@ -31,7 +31,7 @@ export default function App() {
                     ? toast.error('No hits')
                     : data.data.hits.forEach(({ id, webformatURL, largeImageURL }) => {
                         !images.some(image => image.id === id) &&
-                            setImages(...i => [...i, { id, webformatURL, largeImageURL }]);
+                            setImages(i => [...i, { id, webformatURL, largeImageURL }]);
                     });
                 setIsLoading(false)
             });
