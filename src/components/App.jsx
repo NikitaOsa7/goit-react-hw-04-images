@@ -39,7 +39,7 @@ export default function App() {
             setError(error);
             setIsLoading(false);
         }
-    }, [images, page, searchData]);
+    }, [page, searchData]);
 
     const onSumbit = newSearchData => {
         if (newSearchData.trim() === '') {
