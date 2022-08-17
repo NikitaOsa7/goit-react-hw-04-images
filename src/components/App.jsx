@@ -18,6 +18,7 @@ export default function App() {
     const [error, setError] = useState(null);
     const [largeImage, setLargeImage] = useState('');
 
+    
     useEffect(() => {
         if (!page) {
             return;
